@@ -1,11 +1,15 @@
 import thevenin as thev
 
-model = thev.Model()
+sim = thev.Simulation()
 
 expr = thev.Experiment()
-expr.add_step('current_A', 75., (3600., 1.), limits=('voltage_V', 3.))
+expr.add_step('current_C', 1., (3600., 1.), limits=('voltage_V', 3.))
 
-soln = model.run(expr)
+soln = sim.run(expr)
 soln.plot('time_h', 'voltage_V')
+
+print("\n\n")
+print(soln)
+print("\n\n")
 
 assert all(soln.success)

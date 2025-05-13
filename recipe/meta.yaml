@@ -20,12 +20,12 @@ requirements:
     - pip
     - setuptools
   run:
-    - python >={{ python_min }}
+    - python>={{ python_min }}
     - numpy
     - scipy
     - matplotlib-base
     - ruamel.yaml
-    - scikit-sundae
+    - scikit-sundae>=1.0.1
 
 test:
   requires:
