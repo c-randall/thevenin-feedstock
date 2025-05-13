@@ -1,5 +1,5 @@
 {% set name = "thevenin" %}
-{% set version = "0.1.2" %}
+{% set version = "0.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 03b3c0ed4616acdca7beb1786a790bdaff10ce529d5f4846dba5ed600cb58181
+  sha256: 294b5e82e92cbec5a9591d30cf5e87441435703eaac2db0f72736da0f21f0342
 
 build:
   noarch: python
